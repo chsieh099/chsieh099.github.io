@@ -6,8 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Cassidy Hsieh</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Cassidy Hsieh">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -21,11 +20,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="assets/jquery-1.9.1.js"></script>
-  <script src="js/script.js"></script>
+  <!-- 
+    <script src="assets/jquery-1.9.1.js"></script>
+    <script src="js/script.js"></script>
+  -->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,122 +36,180 @@
 </head>
 <body>
 
-   <!-- style="margin-top: 25%"> -->
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="title section" style="margin-top: 150px">
-      <h1>CASSIDY HSIEH</h1>
-      <h6>Graphic Designer
-        • Computer Programmer
-        • Web Developer</h6>
-    </div> <!-- end title section -->
+    <div class="wrapall">
+      <div class="title section">
+        <div class="row">
+          <div class="seven columns">
+            <a href=""><h1>CASSIDY HSIEH</h1></a>
+          </div> <!-- end seven columns -->
+          <div class="five columns">
+            <a href="resume.pdf">
+              <img class="contact" src="images/resume-icon.png" alt="Resume"></a>
+            <a href="https://www.behance.net/cassidyhsieh">
+              <img class="contact" src="images/behance-icon.png" alt="BeHance"></a>
+            <a href="https://github.com/chsieh099">
+              <img class="contact" src="images/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/cassidyhsieh">
+              <img class="contact" src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="mailto:cassidy.hsieh@berkeley.edu">
+              <img class="contact" src="images/email-icon.png" alt="Email"></a>
+          </div> <!-- end four columns -->
+        </div> <!-- end row -->
+        <div class="descriptors">
+          <h6>UI/UX Designer
+          • Computer Programmer
+          • Web Developer</h6>
+        </div> <!-- end descriptors -->
+        <hr>
+      </div> <!-- end title section -->
 
-    <div class="about section">
-      <h4>ABOUT ME</h4>
-      <p>I am a graphic and web designer majoring in Computer Science at the University of California, Berkeley. I specialize in UI/UX design for mobile and web platforms and dabble in 3D modeling and animation. In my free time, I enjoy exploring the Bay Area, learning new digital rendering software, and drawing and sketching. </p>
-    </div> <!-- end about section -->
 
-    <div class="qualities section">
-      <div class="row">
-        <div class="four columns">
-          <h4>SKILLS</h4>
-          <div class="skills row one">
-            <!-- <img class="skill-icon" src="images/photoshop.png" alt="Photoshop Icon"> -->
-            <img class="skill-icon" src="images/photoshop.png" onmouseover="this.src='images/photoshop-hover.png';" onmouseout="this.src='images/photoshop.png';" />
-            <!-- <img class="skill-icon" src="images/illustrator.png" alt="Illustrator Icon"> -->
-            <img class="skill-icon" src="images/illustrator.png" width="52px" onmouseover="this.src='images/illustrator-hover.png';" onmouseout="this.src='images/illustrator.png';" />
-            <!-- <img class="skill-icon" src="images/indesign.png" alt="Indesign Icon"> -->
-            <img class="skill-icon" src="images/indesign.png" width="52px" onmouseover="this.src='images/indesign-hover.png';" onmouseout="this.src='images/indesign.png';" />
-            <!-- <img class="skill-icon" src="images/premierepro.png" alt="PremierePro Icon"> -->
-            <img class="skill-icon" src="images/premierepro.png" width="52px" onmouseover="this.src='images/premierepro-hover.png';" onmouseout="this.src='images/premierepro.png';" />
-          </div> <!-- end row one -->
-          <div class="skills row two">
-            <img class="skill-icon" src="images/html5.png" alt="HTML5 Icon">
-            <img class="skill-icon" src="images/css3.png" alt="CSS3 Icon">
-            <img class="skill-icon" src="images/js5.png" alt="JS5 Icon">
-          </div> <!-- end row two -->
-          <div class="skills row three">
-            <img class="skill-icon" src="images/java.png" alt="Java Icon">
-            <img class="skill-icon" src="images/python.png" alt="Python Icon">
-            <img class="skill-icon" src="images/paper53.png" alt="Paper53 Icon">
-            <img class="skill-icon" src="images/fusion.png" alt="Fusion Icon">
-          </div> <!-- end row three -->
-        </div> <!-- end four columns -->
+      <div class="projects section">
+        <h4>PROJECTS</h4>
+        <div class="row">
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/mounza-box.png" alt="Mounza UI/UX Redesign">
+            </a>
+          </div> <!-- end four columns project-box -->
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/keela-box.png" alt="Keela Web Design">
+            </a>
+          </div> <!-- end four columns project-box -->
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/craigslist-box.png" alt="Craigslist Redesign">
+            </a>
+          </div> <!-- end four columns project-box -->
+        </div> <!-- end row -->
 
-        <div class="eight columns">
-          <h4>EXPERIENCE</h4>
-          <div class="position">
-            <h5>Design Consulting Committee</h5>
-            <h6>Undergraduate Marketing Association | Berkeley, CA</h6>
-          </div> <!-- end position -->
-          <div class="position">
-            <h5>Lead Design Intern</h5>
-            <h6>Vellum Tech | Menlo Park, CA</h6>
-          </div> <!-- end position -->
-          <div class="position">
-            <h5>Lead UI/UX Design Intern</h5>
-            <h6>Mounza, San Francisco Bay Area</h6>
-          </div> <!-- end position -->
-          <div class="position">
-            <h5>Media Technology Committee</h5>
-            <h6>ABA | Berkeley, CA</h6>
-          </div> <!-- end position -->
-        </div> <!-- end eight columns -->
-      </div> <!-- end row -->
-    </div> <!-- end qualities section -->
+        <div class="row">
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/gatsby-box.png" alt="Great Gatsby Poster">
+            </a>
+          </div> <!-- end four columns project-box -->
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/night-box.png" alt="Night on the Town">
+            </a>
+          </div> <!-- end four columns project-box -->
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/postcard-box.png" alt="San Fransokyo Postcard">
+            </a>
+          </div> <!-- end four columns project-box -->
+        </div> <!-- end row -->
 
-    <div class="projects section">
-      <h4>PROJECTS</h4>
-      <div class="project-box">
-        <a href="#">
-          <!-- <img id="mounza-project" src="images/mounza-project.png" alt="Mounza Project"> -->
-          <img class="project" src="images/mounza.png" alt="Mounza Project" onmouseover="this.src='images/mounza-hover.png';" onmouseout="this.src='images/mounza.png';" />
-        </a>
-      </div> <!-- end project-box -->
-      <div class="project-box">
-        <a href="#">
-          <!-- <img id="keela-project" src="images/keela-project.png" alt="Keela Project"> -->
-          <img class="project" src="images/keela.png" alt="Keela Project" onmouseover="this.src='images/keela-hover.png';" onmouseout="this.src='images/keela.png';" />
-        </a>
-      </div> <!-- end project-box -->
-      <div class="project-box">
-        <a href="#">
-          <img class="project" src="images/postcard.png" alt="San Frasokyo Postcard" onmouseover="this.src='images/postcard-hover.png';" onmouseout="this.src='images/postcard.png';" />
-        </a>
-      </div> <!-- end project-box -->
-      <div class="project-box">
-        <a href="#">
-          <img class="project" src="images/suitandtie.png" alt="Suit and Tie Design Postcard" onmouseover="this.src='images/suitandtie-hover.png';" onmouseout="this.src='images/suitandtie.png';" />
-        </a>
-      </div> <!-- end project-box -->
-    </div>
+        <div class="row">
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/apartment-box.png" alt="Apartment Dynamic">
+            </a>
+          </div> <!-- end four columns project-box -->
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/library-box.png" alt="Rethinking the Library">
+            </a>
+          </div> <!-- end four columns project-box -->
+          <div class="four columns project-box">
+            <a href="">
+            <img class="project" src="images/sketches-box.png" alt="Sketches">
+            </a>
+          </div> <!-- end four columns project-box -->
+        </div> <!-- end row -->
+      </div> <!-- end portfolio section -->
 
-    <div class="contact section">
-      <h4>CONTACT</h4>
-      <div class="contact-method">
-        <a href="mailto:cassidy.hsieh@berkeley.edu">
-          <img class="contact-icon" src="images/email-icon.png">
-        <h5>Email</h5></a>
-      </div> <!-- end contact method -->
-      <div class="contact-method">
-        <a href="https://www.linkedin.com/in/cassidyhsieh">
-          <img class="contact-icon" src="images/linkedin-icon.png">
-          <h5>LinkedIn</h5></a>
-      </div> <!-- end contact method -->
-      <div class="contact-method">
-        <a href="https://www.behance.net/cassidyhsieh">
-          <img class="contact-icon" src="images/behance-icon.png">
-          <h5>BeHance</h5></a>
-      </div> <!-- end contact method -->
-      <div class="contact-method">
-        <a href="https://github.com/chsieh099">
-          <img class="contact-icon" src="images/github-icon.png">
-          <h5>GitHub</h5></a>
-      </div> <!-- end contact method -->
-    </div> <!-- end contact section -->
+      <div class="about section">
+        <h4>ABOUT ME</h4>
+        <hr>
+        <p>I am a graphic and web designer majoring in Computer Science at the University of California, Berkeley. I specialize in UI/UX design for mobile and web platforms and dabble in 3D modeling and animation. In my free time, I enjoy exploring the Bay Area, learning new digital rendering software, and rockclimbing. </p>
+      </div> <!-- end about section -->
 
+      <div class="skills section">
+        <h4>SKILLS</h4>
+        <hr>
+        <div class="row">
+          <div class="three columns">
+            <h6>Design and Production</h6>
+            <div class="skill-icons">
+              <div class="hvr-sweep-to-right ps">
+                <img class="hvr-sweep-to-right skill"src="images/ps.png"></div>
+              <div class="hvr-sweep-to-right ai">
+                <img class="hvr-sweep-to-right skill" src="images/ai.png"></div>
+              <div class="hvr-sweep-to-right id">
+                <img class="hvr-sweep-to-right skill" src="images/id.png"></div>
+              <div class="hvr-sweep-to-right pr">
+                <img class="hvr-sweep-to-right skill" src="images/pr.png"></div>
+            </div> <!-- end skill-icons -->
+          </div> <!-- end three columns -->
+
+          <div class="three columns">
+            <h6>Development</h6>
+            <div class="skill-icons">
+              <div class="hvr-sweep-to-right html">
+                <img class="hvr-sweep-to-right skill"src="images/html.png"></div>
+              <div class="hvr-sweep-to-right css">
+                <img class="hvr-sweep-to-right skill" src="images/css.png"></div>
+              <div class="hvr-sweep-to-right js">
+                <img class="hvr-sweep-to-right skill" src="images/js.png"></div>
+              <div class="hvr-sweep-to-right swift">
+                <img class="hvr-sweep-to-right skill" src="images/swift.png"></div>
+            </div> <!-- end skill-icons -->
+          </div> <!-- end three columns -->
+
+          <div class="three columns">
+            <h6>Programming</h6>
+            <div class="skill-icons">
+              <div class="hvr-sweep-to-right java">
+                <img class="hvr-sweep-to-right skill"src="images/java.png"></div>
+              <div class="hvr-sweep-to-right python">
+                <img class="hvr-sweep-to-right skill" src="images/python.png"></div>
+              <div class="hvr-sweep-to-right c">
+                <img class="hvr-sweep-to-right skill" src="images/c.png"></div>
+            </div> <!-- end skill-icons -->
+          </div> <!-- end three columns -->
+
+          <div class="three columns">
+            <h6>3D Modeling</h6>
+            <div class="skill-icons">
+              <div class="hvr-sweep-to-right fusion">
+                <img class="hvr-sweep-to-right skill"src="images/fusion.png"></div>
+              <div class="hvr-sweep-to-right maya">
+                <img class="hvr-sweep-to-right skill" src="images/maya.png"></div>
+            </div> <!-- end skill-icons -->
+          </div> <!-- end three columns -->
+        </div> <!-- end row -->
+      </div> <!-- end skills section -->
+
+      <div class="contact section">
+        <div class="row">
+          <h4>HIT ME UP</h4>
+          <hr>
+          <p>Feel free to contact me in whatever way is most convenient for you.</p>
+          <a href="mailto:cassidy.hsieh@berkeley.edu">
+            <img class="contact-icon" src="images/email-icon.png">
+            <h5>Email</h5></a>
+          <a href="https://www.linkedin.com/in/cassidyhsieh">
+            <img class="contact-icon" src="images/linkedin-icon.png">
+            <h5>LinkedIn</h5></a>
+          <a href="https://www.behance.net/cassidyhsieh">
+            <img class="contact-icon" src="images/behance-icon.png">
+            <h5>BeHance</h5></a>
+          <a href="https://github.com/chsieh099">
+            <img class="contact-icon" src="images/github-icon.png">
+            <h5>GitHub</h5></a>
+          <a href="https://soundcloud.com/chsieh099">
+            <img class="contact-icon" src="images/soundcloud-icon.png">
+            <h5>SoundCloud</h5></a>
+          <p>Here is my resume as a <a href="resume.pdf">PDF</a> as well.</p>
+        </div> <!-- end row -->
+      </div> <!-- end contact section -->
+    </div> <!-- end wrapall -->
   </div> <!-- end container -->
 
 <!-- End Document
