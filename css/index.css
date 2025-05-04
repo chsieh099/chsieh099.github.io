@@ -1,0 +1,17 @@
+.container {
+	text-align: center;
+}
+
+.hero {
+	margin-top: 25%;
+}
+
+.project {
+	background-color:  lightblue;
+	border-radius: 1rem;
+	display: flex;
+	height:  200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
