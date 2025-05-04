@@ -1,17 +1,25 @@
 .container {
-	text-align: center;
+    text-align: center;
 }
 
 .hero {
-	margin-top: 25%;
+    margin-top: 25%;
 }
 
 .project {
-	background-color:  lightblue;
-	border-radius: 1rem;
-	display: flex;
-	height:  200px;
     align-items: center;
+    background-color:  lightblue;
+    border-radius: 1rem;
+    display: flex;
+    height:  200px;
     justify-content: center;
     margin-top: 1rem;
+}
+
+a.project-link {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;   
 }
