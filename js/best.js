@@ -39,6 +39,8 @@ const foodToPlaces = {
     ]
 };
 
+let beachFlagImg = document.createElement("img");
+
 
 async function initMap() {
     const {Map} = await google.maps.importLibrary("maps");
@@ -67,6 +69,10 @@ async function initMap() {
   // console.log(place.displayName);
   // console.log(place.formattedAddress);
 
+
+    beachFlagImg.src =
+      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+
     for (const [food, places] of Object.entries(foodToPlaces)) {
         for (const place of places) {
             const placeInstance = new Place({id: place.id});
@@ -86,6 +92,7 @@ async function addMarker(placeInstance) {
     const marker = new AdvancedMarkerElement({
         map,
         position: placeInstance.location,
+        content: beachFlagImg,
         title: placeInstance.displayName,
     });
 }
