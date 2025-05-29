@@ -43,7 +43,14 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="page">
-  <button onclick="accumulate()" class="accumulate prevent-select disable-dbl-tap-zoom">Add +</button>
+    <div id="input-panel">
+      <div class="limit">
+        <input type="text" id="limit-input" onblur="updateLimit()">
+      </div>
+    </div>
+    <div id="add-button-panel">
+      <button onclick="accumulate()" class="prevent-select disable-dbl-tap-zoom">Add +</button>
+    </div>
   </div>
 
 <!-- End Document

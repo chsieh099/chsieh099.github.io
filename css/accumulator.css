@@ -4,12 +4,29 @@
 	position: fixed;
 }
 
+#input-panel {
+
+}
+
+.limit {
+
+}
+
+#add-button-panel {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%);
+	align-items: center;
+    justify-content: center;
+    bottom: 5vh;
+}
+
 .prevent-select {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
 }
 
 .disable-dbl-tap-zoom {
-  touch-action: manipulation;
+	touch-action: manipulation;
 }
