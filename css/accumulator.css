@@ -31,6 +31,10 @@ button#history {
 	/*overflow: hidden;*/
 }
 
+button#history.historyUndo {
+	background-color: grey;
+}
+
 input[type=text] {
 	text-align: center;
 	background-color: lightblue;

@@ -8,8 +8,26 @@ function accumulate() {
 	const page = document.getElementById('page');
 	if (current + 1 > limit) return;
 	current += 1;
-	_updateCurrent();
+	_updateCurrentDisplay();
 	_updateBackground();
+}
+
+function toggleCategory() {
+
+}
+
+function updateLimit() {
+	const newLimit = Number(limitInputElement.value);
+	if (newLimit != limit) {
+		limit = newLimit;
+		_resetAccumulator();
+	}
+}
+
+function _resetAccumulator() {
+		current = 0;
+		_updateCurrentDisplay();
+		_updateBackground();
 }
 
 function _updateBackground() {
@@ -18,18 +36,8 @@ function _updateBackground() {
     page.style.backgroundImage = gradient;
 }
 
-function _updateCurrent() {
+function _updateCurrentDisplay() {
 	currentValueElement.textContent = current.toString();
-}
-
-function updateLimit() {
-	const newLimit = Number(limitInputElement.value);
-	if (newLimit != limit) {
-		current = 0;
-		limit = newLimit;
-		_updateCurrent();
-		_updateBackground();
-	}
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,7 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	currentValueElement.textContent = current.toString();
 
 	historyButtonElement = document.getElementById('history');
-	historyButtonElement.addEventListener('dblclick', (e) =>
-	  console.log('Double tap detected!')
-	);
+	historyButtonElement.addEventListener('dblclick', (e) => {
+		console.log('undo')
+		if (historyButtonElement.classList.contains('historyUndo')) {
+			historyButtonElement.classList.remove('historyUndo');
+		} else {
+			historyButtonElement.classList.add('historyUndo');
+	  }
+	});
 });
