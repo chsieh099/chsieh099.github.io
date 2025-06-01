@@ -43,11 +43,16 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="page">
-    <div id="input-panel">
-      <div class="limit">
-        <input type="text" id="limit-input" onblur="updateLimit()">
-      </div>
+    <div id="top-panel">
+      <button id="history" class="accumulator-buttons">
+        <img src="images/history.svg" viewBox="0 0 60 55" width="25" width="25"/>
+      </button>
+      <input class="limit" type="text" inputmode="numeric" id="limit-input" onblur="updateLimit()">
+      <button id="category" class="accumulator-buttons">
+        <img src="images/water.svg" viewBox="0 0 60 55" width="25" height="25"/>
+      </button>
     </div>
+    <div id="current">0</div>
     <div id="add-button-panel">
       <button onclick="accumulate()" class="prevent-select disable-dbl-tap-zoom">Add +</button>
     </div>

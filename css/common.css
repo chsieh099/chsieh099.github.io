@@ -1,22 +1,4 @@
 :root {
-  /*--primary: rgb(66, 66, 35); /*dark green*/
-  /*--accent-1: rgb(189, 150, 74);*/ /*dark gold*/
-  /*--accent-2: rgb(150, 88, 49); /*burnt orange*/
-  /*--background: rgb(220, 234, 225); /*light blue*/
-
-  /*--primary-10: rgba(66, 66, 35, 0.1);
-  --primary-20: rgba(66, 66, 35, 0.2);
-  --primary-30: rgba(66, 66, 35, 0.3);
-  --primary-40: rgba(66, 66, 35, 0.4);
-  --primary-50: rgba(66, 66, 35, 0.5);
-  --primary-60: rgba(66, 66, 35, 0.6);
-  --primary-70: rgba(66, 66, 35, 0.7);
-  --primary-80: rgba(66, 66, 35, 0.8);
-  --primary-90: rgba(66, 66, 35, 0.9);
-
-  --accent-1-transparent: rgba(189, 150, 74, 0.7);
-  --accent-1-30: rgba(189, 150, 74, 0.3);*/
-
   --link-color: #1EAEDB;
   --link-hover-color: #0FA0CE;
 }
