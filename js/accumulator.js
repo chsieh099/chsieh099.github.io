@@ -1,27 +1,67 @@
-let limit = 10;
+let limit;
+let increment;
 let current = 0;
+let categoryIndex = 0;
 
-let limitInputElement;
-let currentValueElement;
+let limitInputEl;
+let currentValueEl;
+
+let categoryImageEl;
+
+const categories = new Map([
+	['water', {
+		limit: 8,
+		increment: 1,
+		color: 'blue',
+	}],
+	['calories', {
+		limit: 1600,
+		increment: 100,
+		color: 'orange',
+		unit: 'cal',
+	}],
+	['budget', {
+		limit: 500,
+		increment: 10,
+		color: 'green',
+		unit: '$',
+	}],
+]);
+const categoryList = Array.from(categories.entries());
 
 function accumulate() {
 	const page = document.getElementById('page');
 	if (current + 1 > limit) return;
-	current += 1;
+	current += increment;
 	_updateCurrentDisplay();
 	_updateBackground();
 }
 
 function toggleCategory() {
+	if (!categoryImageEl) {
+		categoryImageEl = document.getElementById('category-image');
+	}
+	categoryIndex = categoryIndex + 1 >= categoryList.length ? 0 : categoryIndex + 1;
 
+	const category = categoryList[categoryIndex];
+	categoryImageEl.src = `images/${category[0]}.svg`;
+	_updateLimit(category[1].limit);
+	increment = category[1].increment;
+
+	_resetAccumulator();
 }
 
-function updateLimit() {
-	const newLimit = Number(limitInputElement.value);
+function readLimitInput() {
+	const newLimit = Number(limitInputEl.value);
 	if (newLimit != limit) {
-		limit = newLimit;
+		_updateLimit(newLimit);
 		_resetAccumulator();
 	}
+}
+
+function _updateLimit(newLimit) {
+	limit = newLimit;
+	limitInputEl.value = newLimit.toString();
 }
 
 function _resetAccumulator() {
@@ -33,20 +73,25 @@ function _resetAccumulator() {
 function _updateBackground() {
 	const percentage = (current/limit) * 100 + "%";
 	const gradient = 'linear-gradient(to top, lightblue, lightblue ' + percentage + ', transparent ' + percentage + ', transparent)';
-    page.style.backgroundImage = gradient;
+	page.style.backgroundImage = gradient;
 }
 
 function _updateCurrentDisplay() {
-	currentValueElement.textContent = current.toString();
+	currentValueEl.textContent = current.toString();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
 	// Initialize values.
-	limitInputElement = document.getElementById('limit-input');
-	limitInputElement.value = limit.toString();
+	const category = categoryList[0];
+	limit = category[1].limit;
+	increment = category[1].increment;
 
-	currentValueElement = document.getElementById('current');
-	currentValueElement.textContent = current.toString();
+	// Update display values.
+	limitInputEl = document.getElementById('limit-input');
+	_updateLimit(limit);
+
+	currentValueEl = document.getElementById('current');
+	currentValueEl.textContent = current.toString();
 
 	historyButtonElement = document.getElementById('history');
 	historyButtonElement.addEventListener('dblclick', (e) => {
